@@ -332,79 +332,95 @@ body{
 
 
 
+
+
+
+
+
 .bottom-sec-3-container{
     text-align: center;
     font-family: 'arial';
     margin-top: 10px;
-}
-.bottom-sec-3-container-head{
-    font-size: 24px;
-    font-weight: bold;
-}
-
-
-.bottom-sec-3-subtext {
-  font-size: 16px;
-  margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.bottom-sec-3-feature-list {
-  margin-top: 30px;
-  margin-left: 60px;
-  font-size: 16px;
+.bottom-sec-3-container1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 40px 40px;
+  max-width: 1200px;
 }
 
-.bottom-sec-3-feature-item {
+.bottom-sec-3-left {
+  flex: 1;
+  margin-right: 60px;
+}
+
+.bottom-sec-3-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 0;
-  border-bottom: 1px solid #ddd;
-  cursor: pointer;
+  width:50vw;
 }
 
-.bottom-sec-3-feature-item h5 {
-  margin: 0;
-  font-weight: bold;
+.bottom-sec-3-title span {
+  color: #f58220;
+  font-size: 24px;
+  margin-left: 10px;
 }
 
-.bottom-sec-3-toggle-btn {
-  font-size: 20px;
-  color: #ff7a00;
+.bottom-sec-3-content {
+  margin-bottom: 25px;
+  display: none;
+  margin-left: 40px;
 }
 
-.bottom-sec-3-image-card {
-  padding: 20px;
-  background: #fff;
+.bottom-sec-3-content.active {
+  display: block;
+}
+
+.bottom-sec-3-content ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.bottom-sec-3-content ul li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+  line-height: 1.6;
+}
+
+.bottom-sec-3-image {
+  flex: 1;
+  margin-left: 40px;
+  max-width: 500px;
   border-radius: 20px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
 }
 
-.bottom-sec-3-img {
-  border-radius: 15px;
-  margin-bottom: 15px;
-  height:450px;
-  width:500px
+.bottom-sec-3-image img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
-.bottom-sec-3-desc {
-  font-size: 16px;
-  color: #555;
+.bottom-sec-3-details{
+    font-family: 'arial';
+    font-size: 16px;
+    text-align: start;
+    color:darkgray
 }
 
-.bottom-sec-3-feature-item.active .bottom-sec-3-toggle-btn {
-  color: #ff7a00;
-}
-
-@media (max-width: 767px) {
-  .bottom-sec-3-feature-item {
-    flex-wrap: wrap;
-  }
-  .bottom-sec-3-feature-item h5 {
-    width: 85%;
-  }
-  .bottom-sec-3-toggle-btn {
-    width: 15%;
-    text-align: right;
-  }
+.bottom-sec-3-img{
+    height:400px;
+    width: 500px;
+    border-radius: 15px;
 }
