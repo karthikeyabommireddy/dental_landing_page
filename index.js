@@ -24,3 +24,19 @@
       }
     });
   });
+
+function updateHeadingsForMobile() {
+    const mainHeading = document.getElementById('main-heading');
+    const subHeading = document.getElementById('sub-heading');
+
+    if (window.innerWidth <= 768) {
+      mainHeading.innerHTML = 'Your Smile,<br/> Our Priority At<br><span class="highlight-text">Clove Dental</span>';
+      subHeading.textContent = "Expert RCT, Zero Pain. Right Here in Delhi";
+    } else {
+      mainHeading.textContent = "Painless Root Canal Treatment in Delhi";
+      subHeading.textContent = "Expert RCT. Zero Pain. Right Here in Delhi";
+    }
+}
+updateHeadingsForMobile();
+
+window.addEventListener('resize', updateHeadingsForMobile);
