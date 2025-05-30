@@ -142,7 +142,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 42px; /* ensure it matches input height */
+    height: 42px;
     margin-left: 0;
 }
 
@@ -443,7 +443,7 @@ body{
 .bottom-sec-4-btn{
     background-color: #F8943F;
     color: white;
-    padding: 12px;
+    padding: 10px;
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -489,4 +489,23 @@ body{
     border-radius: 25px;
     margin-bottom: 15px;
     font-size: 14px;
+}
+.bottom-sec-captcha-code{
+    background-color: #4b2c20;
+    color: white;
+    padding: 10px 30px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43px;
+    margin-left: 0;
+}
+.bottom-sec-4-captcha-input{
+    flex: 1;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0;
 }
